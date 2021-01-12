@@ -147,7 +147,15 @@ buildNumber.properties
 *.zip
 *.tar.gz
 *.rar
-
+magician.iml
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+# compiled output
+magician-console-web/dist
+magician-console-web/tmp
+magician-console-web/out-tsc
+# Only exists if Bazel was run
+magician-console-web/bazel-out
 
+# dependencies
+magician-console-web/node_modules
