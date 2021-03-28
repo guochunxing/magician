@@ -1,0 +1,20 @@
+###
+POST http://localhost:8080/message/receive/weimob
+Content-Type: application/json
+api_name:workabee.user.get
+api_version:1.0.0
+
+{
+  "id": "931a7935-3ddc-47dd-809d-c147b7e7fc10",
+  "topic": "ec_order",
+  "event": "orderStatusChange",
+  "version": 1,
+  "sign": "066f5fef3c7bef0c35e9380e0042d602",
+  "msgSignature": "42e382f19b85091e86f3ae5bd2242c52",
+  "test": false,
+  "business_id": "1358165795",
+  "public_account_id": "100000895802",
+  "msg_body": "kGzjLWrMIDwftbpicryMbBllJn6bWynQzQuWhexyt29m0trzOqld6VeJc2NqmNFcmkBBYOCsjm4uESRIuntM7TDZM4oLUPpnWOSqfGD0np6Nfl2ec7ASFTk5GAkDf8ZExoUkh+w93cjOGRQTl7ICb1b93c21t+erIKQX9YW3iCRtMrgxLMEimzRYLpF8w7YuQ9CkFLmAe/zmDiH7uTAE5qUDmdeYatK2dWqlA80PyVikj/bwcvV6QaslAcb3RMicWYumFM+cO5ae8xSz9eqmdbxTVjkd2AFNUQtXHpTOJLyzv5lcSwS9C8ivZvmh65R7G8Sfe7eR4lt6YXERFEIhWXFjG2Cafjt5BbIcg6UlSnlizRppyqzRPPhYvTEd3a6LcT2kEvPrQbH24yw4Ok1jFdcHF8ZgrWh090CaJuumoBPDO++G5Nftz/BUhU26wlZLtnWM+JBlt9In8DDiUiEA3tNzKWWyyKRpKdw6N6IXqdwRMpE43EBfYRmdd6fvlIm1Pi5XLsjMoG1x6+1RASzuuYIwEbKYJVYvV1Si+AI76U8uM8mYjV6QAtwU8Nu2H/WJPXHnsoOsjvyQCBQNKCaP9wafQyeRzvVUCMEJZbN8UWcI/hqAq5MzB9PUePVF9ONwTp4zGF8JpypiYvFX8XIG948hO9N2iXer6X0sMGuZVYD8ptdCxhEpgbg9EO+zfSeOBXVEwYE3Hd3efVkOYElfEqOqbgt9kZUf+aQpQhfFRCEzTlAgJe2I3QUAahspZN3gvEHJtyzdfLSMPQrpmrrPREuN1Bb+lCrRp1QPsRYPXdK2V32AhvY5PAqwdZKJgkeyHCkLIFBwG6hYHaJ3sMSSmbAdKi4DJ+hslFRn9dS+5+gj8gOld+O9EDNRDGqtICNgJ/4V8OVYNsia0yxRSvGRCb3feTvFRDevuI4NbAIPp0H/kePy7EEY7JmjMyHDg7tX5SpzrB4HGfStXiwvvyNO/VrjSVTQOq3j7pG/Js6iJYvhNzcm5Fnw7mBJo22kyOhfyqx5Oy/LvEJvcKuTzcn8G0FLrRolpEnSidJhf/EsKHOphNSWdqP0jJDRpLSv/gqQXPVoRdYgshDtZxwGJrfgig=="
+}
+
+

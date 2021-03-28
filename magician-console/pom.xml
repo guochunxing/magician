@@ -12,15 +12,17 @@
     <artifactId>magician-console</artifactId>
     <packaging>pom</packaging>
     <modules>
+        <module>magician-console-domain</module>
         <module>magician-console-infra</module>
+        <module>magician-console-dependency</module>
         <module>magician-console-biz</module>
         <module>magician-console-web</module>
+        <module>magician-console-api</module>
     </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
-
 
 </project>

@@ -18,4 +18,25 @@ public class MagicianException extends RuntimeException implements Serializable 
 
     private String message;
 
+    public MagicianException(Integer code, String message) {
+        super(message);
+        this.code = code;
+        this.message = message;
+    }
+
+    public MagicianException(MagicianMessage message) {
+        super(message.getMessage());
+        this.code = message.getCode();
+        this.message = message.getMessage();
+    }
+
+    public static MagicianException EX(MagicianMessage message) {
+        return new MagicianException(message);
+    }
+
+
+    public static MagicianException EX(MagicianMessage message, String replaceMessage) {
+        return new MagicianException(message.getCode(), replaceMessage);
+    }
+
 }

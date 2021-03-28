@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC
+        "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <context id="context"
+             targetRuntime="MyBatis3">
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <!--文件覆盖设置-->
+        <plugin type="com.workabee.mybatis.tool.plugin.OverIsMergeAblePlugin"/>
+        <!--LombokPlugin-->
+        <plugin type="com.workabee.mybatis.tool.plugin.LombokPlugin"/>
+        <!--example 文件指定存放位置-->
+        <plugin type="com.workabee.mybatis.tool.plugin.ExamplePackageClassPlugin">
+            <property name="targetPackage"
+                      value="com.workabee.cloud.magician.gateway.infra.dao.condition"/>
+            <property name="isProject"
+                      value="true"/>
+        </plugin>
+        <plugin type="org.mybatis.generator.plugins.RenameExampleClassPlugin">
+            <property name="searchString"
+                      value="Example$"/>
+            <property name="replaceString"
+                      value="Condition"/>
+        </plugin>
+
+        <!--db 字段描述 -->
+        <commentGenerator type="com.workabee.mybatis.tool.CommentGenerator">
+            <property name="suppressAllComments"
+                      value="true"/>
+            <property name="suppressDate"
+                      value="true"/>
+        </commentGenerator>
+        <!--db 连接  -->
+        <!-- <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://sh-cynosdbmysql-grp-4dvcdqfy.sql.tencentcdb.com:21226/notice?tinyInt1isBit=true&amp;useSSL=false"
+                        userId="root"
+                        password="chunxing0205"/>  -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/magician?tinyInt1isBit=true&amp;useSSL=false"
+                        userId="root"
+                        password="123456"/>
+        <javaTypeResolver>
+            <property name="forceBigDecimals"
+                      value="false"/>
+        </javaTypeResolver>
+
+        <javaModelGenerator targetPackage="com.workabee.cloud.magician.gateway.infra.dao.model"
+                            targetProject="src/main/java">
+            <property name="enableSubPackages"
+                      value="true"/>
+            <property name="trimStrings"
+                      value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mybatis.mapper.base"
+                         targetProject="src/main/resources">
+            <property name="enableSubPackages"
+                      value="true"/>
+            <property name="trimStrings"
+                      value="true"/>
+        </sqlMapGenerator>
+
+        <javaClientGenerator targetPackage="com.workabee.cloud.magician.gateway.infra.dao.mapper.base"
+                             type="XMLMAPPER"
+                             targetProject="src/main/java">
+            <property name="enableSubPackages"
+                      value="true"/>
+        </javaClientGenerator>
+        <table tableName="api_definition"
+               mapperName="BaseApiDefinitionMapper">
+        </table>
+
+    </context>
+</generatorConfiguration>

@@ -10,6 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>magician-admin</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>magician-admin-api</module>
+        <module>magician-admin-biz</module>
+        <module>magician-admin-domain</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -20,6 +26,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.workabee.cloud</groupId>
+            <artifactId>magician-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

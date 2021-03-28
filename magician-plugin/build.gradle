@@ -1,0 +1,31 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.7.2'
+}
+
+group 'org.workabee.cloud'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenLocal()
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenCentral()
+}
+
+dependencies {
+    compile(group: 'com.workabee.cloud', name: 'magician-common', version: '0.0.1-SNAPSHOT') {
+        exclude group: 'org.springframework'
+        exclude group: 'org.springframework.boot'
+    }
+}
+
+intellij {
+    plugins = ['java']
+    localPath = "/Users/workabee/Library/Application Support/JetBrains/Toolbox/apps/IDEA-C/ch-0/203.7148.57/IntelliJ IDEA CE.app"
+}
+patchPluginXml {
+    changeNotes """
+      Add change notes here.<br>
+      <em>most HTML tags may be used</em>"""
+}
+
+
