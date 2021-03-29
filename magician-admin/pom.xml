@@ -15,6 +15,7 @@
         <module>magician-admin-api</module>
         <module>magician-admin-biz</module>
         <module>magician-admin-domain</module>
+        <module>magician-admin-infra</module>
     </modules>
 
     <properties>
