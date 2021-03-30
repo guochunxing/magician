@@ -1,8 +1,8 @@
 ###
 POST http://localhost:8080/message/receive/weimob
 Content-Type: application/json
-api_name:workabee.user.get
-api_version:1.0.0
+api_name: workabee.user.get
+api_version: 1.0.0
 
 {
   "id": "931a7935-3ddc-47dd-809d-c147b7e7fc10",
